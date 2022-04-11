@@ -8,6 +8,6 @@
 
 A small accompanying guide has been written as well:
 
-[SLMail5.5 - Google Docs](https://docs.google.com/document/d/1mujzcjSh4KYvzAtFBEF0IVynjbPq8-oPHoOn_7QaSqc/edit?usp=sharing)
+[SLMail5.5 - Google Docs](https://docs.google.com/document/d/1bYczaJy3O_1AaWDpjwCVikddTIBxKiO1mCpjXV8Xrbo/edit?usp=sharing)
 
 
